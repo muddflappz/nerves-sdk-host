@@ -1,7 +1,6 @@
 from ubuntu:12.04
 
 ENV HOME /root
-ENV http_proxy http://192.168.1.10:28000
 
 # install the development packages
 RUN DEBIAN_FRONTEND=noninteractive apt-get update
@@ -84,7 +83,6 @@ RUN useradd -m -s /bin/bash nerves ; \
 	echo "nerves:nerves" | chpasswd
 
 ENV HOME /home/nerves
-ENV http_proxy ""
 
 RUN mkdir ~nerves/.nerves-cache ; \
     chown nerves:nerves ~nerves/.nerves-cache ; \
