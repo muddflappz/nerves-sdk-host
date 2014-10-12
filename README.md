@@ -8,4 +8,4 @@ embedded Erland development using the [nerves-project/nerves-sdk](https://github
 
 Although the environment created by this Dockerfile is based on Ubuntu 12.04,
 it hosts on Ubuntu 14.04 quite well and alleviates the differences between
-environments related to setting up i386 libraries.
+environments related to setting up i386 libraries required by nerves-sdk.
